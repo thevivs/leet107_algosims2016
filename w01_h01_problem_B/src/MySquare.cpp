@@ -8,33 +8,39 @@
 
 #include "MySquare.hpp"
 
-void MySquare::setSrc(float _x, float _y){
-    
-    src.set(_x, _y);
-}
-
-void MySquare::setDst(float _x, float _y){
-
-    dst.set(_x,_y);
-
-}
-
-
-void MySquare::powUpdatePct(float _pct, float _shaper){
-    
-    float Powpct = powf(_pct, _shaper);
-    pos = dst * Powpct + src * (1.0 - Powpct);
-
-}
 
 
 void MySquare::draw(){
+
     
-    ofSetColor(255, 255, 255);
-    ofLine(src, dst);
+    ofSetColor(255, 255, 255, 200);
+    ofSetRectMode(OF_RECTMODE_CENTER);
+    ofRect(ofGetWidth() * 0.5, ofGetHeight() * 0.5, 50, 50);
+
+
+}
+
+void MySquare::drawAgain(){
     
-    ofSetColor(255, 0, 0, 200);
-    ofRect(pos, 10, 10);
+    
+    ofSetColor(255, 255, 255, 200);
+    ofSetRectMode(OF_RECTMODE_CENTER);
+    ofRect(ofGetMouseX(), ofGetMouseY(), 50, 50);
+    
     
 }
 
+void MySquare::drawRight(){
+    ofSetColor(255, 255, 255, 200);
+    ofSetRectMode(OF_RECTMODE_CENTER);
+    ofRect(ofGetMouseX() * 0.5, ofGetMouseY() * 0.5, 50, 50);
+}
+
+
+//void MySquare::mousePressed(){
+//    
+//    
+//    ofSetColor(255, 255, 255, 200);
+//    ofRect(ofGetMouseX(), ofGetMouseY(), 50, 50);
+//    ofSetRectMode(OF_RECTMODE_CENTER);
+//}

@@ -11,24 +11,18 @@
 #pragma once
 #include "ofMain.h"
 
-
+//start off by setting a position for the square
+//then when mouse pressed bring it to a different positon
 
 class MySquare{
     
 public:
 
     void draw();
-    void setSrc(float _x, float _y);
-    void setDst(float _x, float _y);
-    
-    void updatePct(float _pct);
-    
-    void powUpdatePct(float _pct, float _shaper);
+    void drawAgain();
+    void drawRight();
     
 private:
-    
-    ofPoint src, dst;
-    ofPoint pos;
     
     
     

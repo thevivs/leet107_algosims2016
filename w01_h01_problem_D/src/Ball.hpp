@@ -6,9 +6,30 @@
 //
 //
 
-#ifndef Ball_hpp
-#define Ball_hpp
 
-#include <stdio.h>
+#pragma once
+#include "ofMain.h"
 
-#endif /* Ball_hpp */
+
+class Ball{
+public:
+    
+    void update();
+    void ballShape(float _x, float _y, float _s);
+    void ballPos(float _x, float _y);
+    
+    void setup();
+    void draw(float _x, float _y, float _s);
+    
+
+    
+
+    float x;
+    float y;
+    float s;
+  
+    
+private:
+    
+    ofPoint pos;
+};
