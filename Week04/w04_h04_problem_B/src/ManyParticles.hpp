@@ -14,7 +14,7 @@ class ManyParticles{
     
 public:
     
-    ManyParticles();
+    ManyParticles(ofPoint _pos, ofPoint _vel);
     
     void draw();
     void setup();
@@ -26,7 +26,7 @@ public:
     
 private:
     
-    ofPoint pos, vel, force;
+    ofPoint pos, vel, frc,force;
     float dampening;
     
     

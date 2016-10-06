@@ -9,10 +9,12 @@
 #include "ManyParticles.hpp"
 
 
-ManyParticles::ManyParticles(){
+ManyParticles::ManyParticles(ofPoint _pos, ofPoint _vel){
     
+    pos.set(_pos.x, _pos.y);
+    vel.set(_vel.x, _vel.y);
     
-    initialPosition(ofPoint(ofGetWidth()*0.5, ofGetHeight()*0.5), ofPoint(ofRandom(-1,1), ofRandom(-1, 1)));
+//    initialPosition(ofPoint(ofGetWidth()*ofRandom(0.5), ofGetHeight()*ofRandom(0.5)), ofPoint(ofRandom(-10,10), ofRandom(-10, 10)));
     dampening = 0.02;
     
 }
@@ -26,7 +28,8 @@ void ManyParticles::initialPosition(ofPoint _pos, ofPoint _vel){
 
 void ManyParticles::update(){
     
-    vel = vel + force;
+//    cout<<force<<endl;
+//    vel = vel + force;
     pos = pos + vel;
     
 }
@@ -64,9 +67,34 @@ void ManyParticles::addRepulsion(ofPoint _pos, float _radius, float _strength){
     ofPoint attractPt(ofGetMouseX(), ofGetMouseY());
     force = attractPt + pos;
     
-    vel *= dampening;
-    vel += force *0.5;
+    float dist = force.length();
+        force.normalize();
     
+    
+    vel *= dampening;
+
+    
+    if( dist < 150 ){
+    vel += force * 0.05;
+    }
+
+    
+//    ofPoint attractPt(ofGetMouseX(), ofGetMouseY());
+//    frc = attractPt-pos;
+//    
+//    //let get the distance and only repel points close to the mouse
+//    float dist = frc.length();
+//    frc.normalize();
+//    
+//    vel *= drag;
+//    if( dist < 150 ){
+//        vel += -frc * 0.6; //notice the frc is negative
+//    }else{
+//        //if the particles are not close to us, lets add a little bit of random movement using noise. this is where uniqueVal comes in handy.
+//        frc.x = ofSignedNoise(uniqueVal, pos.y * 0.01, ofGetElapsedTimef()*0.2);
+//        frc.y = ofSignedNoise(uniqueVal, pos.x * 0.01, ofGetElapsedTimef()*0.2);
+//        vel += frc * 0.04;
+//    }
 }
 
 void ManyParticles::draw(){

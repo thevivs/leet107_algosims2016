@@ -33,7 +33,7 @@ void ofApp::draw(){
     int vidWidth = inkedPixels.getWidth();
     int vidHeight = inkedPixels.getHeight();
     int nChannel = inkedPixels.getNumChannels();
-    
+
     for (int i = 0; i < vidWidth; i+= 16){
         for(int j = 1; j < vidHeight; j+= 16){
             unsigned char r = inkedPixels[(j * 150 + i)*nChannel];
@@ -45,7 +45,7 @@ void ofApp::draw(){
     ofPixelsRef pixelsRef = inked.getPixels();
     ofSetHexColor(0xffffff);
     
-    for(int k = 0; k < vidWidth; k += 2){
+    for(int k = 0; k < vidWidth; k += 6){
         for (int l = 0; l < vidHeight; l+=15){
             float lightness = pixelsRef.getColor(k,l).getLightness();
             

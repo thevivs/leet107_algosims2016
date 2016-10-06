@@ -5,8 +5,10 @@ void ofApp::setup(){
     
     for(int i = 0; i< num; i++){
         
-        ManyParticles tempP;
-        tempP.initialPosition(ofPoint(ofGetWidth()*0.5, ofGetHeight()*0.5), ofPoint(ofRandom(-1,1), ofRandom(-1, 1)));
+        ManyParticles tempP(ofPoint(ofGetWidth()*ofRandom(0.5), ofGetHeight()*ofRandom(0.5)), ofPoint(0,0));
+//        tempP.initialPosition(ofPoint(ofGetWidth()*0.5, ofGetHeight()*0.5), ofPoint(ofRandom(-1,1), ofRandom(-1, 1)));
+//        
+//        
         particles.push_back(tempP);
     }
     
@@ -17,13 +19,14 @@ void ofApp::update(){
     
     
     for(int i = 0; i< num; i++){
-        if(ofGetMousePressed(OF_KEY_LEFT)){
+        particles[i].update();
+//        if(ofGetMousePressed(OF_KEY_LEFT)){
             particles[i].addRepulsion(ofPoint(ofGetMouseX(), ofGetMouseY()), 100, 0.05);
             
-        } else {
-            
-            particles[i].addAttraction(ofPoint(ofGetMouseX(), ofGetMouseY()), 100, 0.05);
-        }
+//        } else {
+//            
+//            particles[i].addAttraction(ofPoint(ofGetMouseX(), ofGetMouseY()), 100, 0.05);
+//        }
     }
     
 }
