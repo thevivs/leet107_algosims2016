@@ -10,4 +10,4 @@ https://vimeo.com/85983471
 
 I am inspired by the imagery in this example by Guillermo Bernal, and would look to this as a point of departure for my midterm.
 
-(/Users/vivianlee/Dropbox/DT/Fall2016/CreativeCoding/OpenFrameworks/of_v0.9.3_osx_release/apps/leet107_AlgoSims2016/inspiration.png)
+(inspiration.png)
