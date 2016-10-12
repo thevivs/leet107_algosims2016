@@ -10,4 +10,4 @@ https://vimeo.com/85983471
 
 I am inspired by the imagery in this example by Guillermo Bernal, and would look to this as a point of departure for my midterm.
 
-(inspiration.png)
+(https://vivianleedt.files.wordpress.com/2016/10/inspiration.png?w=739)
