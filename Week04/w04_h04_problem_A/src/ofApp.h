@@ -27,5 +27,5 @@ class ofApp : public ofBaseApp{
     Orbit orbit;
     
     ofxPanel gui;
-    ofParameterGroup parameterGroup;
+    ofParameterGroup parametersGroup;
 };

@@ -23,6 +23,7 @@ public:
     
     void addForce(ofPoint _force);
     
+//    ofPoint getPosition();
     void addAttractionForce (ofPoint _pos, float _rad, float _scale);
     
     void seek(ofPoint &_man, float _maxSpeed, float _maxForce);

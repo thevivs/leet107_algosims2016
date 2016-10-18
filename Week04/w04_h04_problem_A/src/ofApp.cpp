@@ -7,8 +7,8 @@ void ofApp::setup(){
     
     orbit.set(150, 0);
     
-    parameterGroup.add(orbit.circleParameters);
-    gui.setup(parameterGroup);
+    parametersGroup.add(orbit.circleParameters);
+    gui.setup(parametersGroup);
     
     
     

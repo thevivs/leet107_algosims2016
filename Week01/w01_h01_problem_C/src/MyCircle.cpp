@@ -13,7 +13,7 @@
 void MyCircle::draw(float _circleSize){
     
     circleSize = _circleSize;
-    ofDrawCircle(ofGetWidth()*0.5, ofGetHeight()*0.5, circleSize);
+    ofDrawCircle(ofGetWidth()/3, ofGetHeight()*0.5, circleSize);
     
 
     

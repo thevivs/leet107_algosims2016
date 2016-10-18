@@ -44,6 +44,9 @@ void ofApp::update(){
             zombie.seek(man1[i], maxSpeed, maxForce);
         }
     
+//    for(int i = 0; i < 5; i++){
+//        zombie.seek(man1[0].getPosition().distance(man1[1]) < man1[0].distance, maxSpeed, maxForce);
+//    }
     
     zombie.update();
     

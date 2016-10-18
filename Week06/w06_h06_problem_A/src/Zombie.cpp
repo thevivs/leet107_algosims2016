@@ -57,6 +57,11 @@ void Zombie::addAttractionForce(ofPoint _pos, float _rad, float _scale){
     }
 }
 
+//ofPoint Zombie::getPosition(){
+//    return pos;
+//    
+//}
+
 void Zombie::seek(ofPoint &_man, float _maxSpeed, float _maxForce){
     
     maxSpeed = _maxSpeed;

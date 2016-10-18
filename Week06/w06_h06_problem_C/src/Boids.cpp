@@ -55,7 +55,7 @@ ofPoint Boids::cohesion(vector<Boids> &boidParticles){
     centerMass = centerMass/(boidParticles.size()-1);
     
     ofPoint cohesion_vel;
-    cohesion_vel = (centerMass-pos)/80.0;
+    cohesion_vel = (centerMass-pos)/100.0;
     return cohesion_vel;
     
 }
