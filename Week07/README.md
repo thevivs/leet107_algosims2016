@@ -17,7 +17,12 @@ When choosing a color theme for any piece I do, I will usually go with a warm co
 ![Celestial](Celestial.png)
 ###Celestial
 
-Sound:
-Microtonal by SUNE
+
+
+
+###Sound Design: 
+#####Microtonal by SUNE
+
 soundcloud.com/sunemusic
+
 soundcloud.com/lindred
