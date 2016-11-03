@@ -8,7 +8,7 @@
 
 #include "Square.hpp"
 
-Square::Square(){
+void Square::setup(){
     
     position.x = ofGetWidth()/2;
     position.y = ofGetHeight()/2;
