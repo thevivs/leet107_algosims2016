@@ -3,7 +3,8 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     
-
+    ofSetBackgroundAuto(false);
+    ofBackground(0, 150);
     ofEnableAlphaBlending();
     
     num = 15000;
@@ -21,6 +22,7 @@ void ofApp::update(){
         particle[i].update();
     }
 
+
 }
 
 //--------------------------------------------------------------
@@ -36,11 +38,16 @@ void ofApp::addParticles(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofBackground(99, 104, 112, 150);
+//    ofBackground(0, 150);
 
     for(int i = 0; i < num; i++){
         particle[i].draw();
         particle[i].bounding();
+    }
+    
+    if(ofGetMousePressed(OF_MOUSE_BUTTON_LEFT)){
+        ofBackground(0);
+        
     }
 
 }
