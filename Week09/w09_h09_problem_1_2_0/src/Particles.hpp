@@ -15,12 +15,14 @@ class Particles{
     
 public:
     Particles();
+    void setInit(ofPoint _pos, ofPoint _vel = ofPoint(0,0));
     void addForce(ofVec3f force);
     void update();
     void draw();
     
     float mass;
     
+    ofPoint getPosition();
 
     ofVec3f pos;
     ofVec3f vel;

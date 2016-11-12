@@ -11,7 +11,7 @@
 class VectorField{
     
 public:
-    void setup(int _w, int _h, int _d, int _res);
+    void setup(int _w, int _h, int _res);
     void setNoise(float _noiseX, float _noiseY, float _noiseZ);
     //, float _cosNum, float _sinNum
     

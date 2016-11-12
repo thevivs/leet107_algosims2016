@@ -8,14 +8,13 @@
 
 #include "VectorField.hpp"
 
-void VectorField::setup(int _w, int _h, int _d, int _res){
+void VectorField::setup(int _w, int _h, int _res){
     
     //when creating a gui for width and height, they need to be the same or else it won't draw
     //but also why is it still following a path when there is no field
     
     width = _w;
     height = _h;
-    depth = _d;
     res = _res;
     
     //because we don't need to cover the entire screen with vectors of points
