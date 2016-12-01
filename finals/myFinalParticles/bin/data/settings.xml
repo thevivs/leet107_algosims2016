@@ -1,0 +1,8 @@
+<group>
+	<multiplyNoise>25</multiplyNoise>
+	<multiplyNoiseX>0.0003</multiplyNoiseX>
+	<multiplyNoiseY>0.0003</multiplyNoiseY>
+	<multipleCos>1</multipleCos>
+	<multipleSin>1</multipleSin>
+	<particleAmount>1000</particleAmount>
+</group>
