@@ -1,13 +1,4 @@
-##Midterm Final Proposal
+##Vivian T. Lee
 
 
-After a discussion with Regina about the direction I would like to take in this class, she suggested I try to re-imagine some past shorts films I have produced in the past as creative codes. I am interested in making an abstract-experimental piece with shapes and textures, and would focus utilizing flocking simulations.
-
-[Celestial](http://vimeo.com/94469614)
-
-[Halcyon](https://vimeo.com/85983471)
-
-
-I am inspired by the imagery in this example by Guillermo Bernal, and would look to this as a point of departure for my midterm.
-
-![image](inspiration.png)
+A repository for the works that I have done in my **Algorithmic Simluartions** course at Parsons School of Design, fall 2016.
