@@ -1,0 +1,3 @@
+##Finals Prototype 2
+
+In this iteration, I am trying to figure out a way in which I can control the graphics on the screen with the sound piece I have provided in an aesthetically pleasing manner. I want to achieve this either by controlling the size of the "peephole" based on the frequency of the sound, so the information being fed controls how much the user can see. Or, I want to use the sound as a means of controlling the direction or speed of the perlin noise particles.

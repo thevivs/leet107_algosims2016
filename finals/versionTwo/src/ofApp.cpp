@@ -2,12 +2,14 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+//    
+//    ofToggleFullscreen();
     
     sound.load("microtonal_30sec.wav");
     sound.play();
     sound.setLoop(true);
     
-    particleParameters.add(noiseNum.set("multiplyNoise",25.0,0.00,100.0));
+    particleParameters.add(noiseNum.set("multiplyNoise",100.0,0.00,100.0));
     particleParameters.add(noiseX.set("multiplyNoiseX",0.005, 0.000, 0.01));
     particleParameters.add(noiseY.set("multiplyNoiseY",0.005, 0.000, 0.01));
     particleParameters.add(cosNoise.set("multipleCos", 1.0, 0.0, 2.0));
@@ -22,7 +24,7 @@ void ofApp::setup(){
     //    ofEnableAlphaBlending();
     //    ofSetFrameRate(160);
     
-    num = 1500;
+    num = 2500;
     
     for(int i = 0; i < num; i++){
         addParticles();
@@ -42,9 +44,10 @@ void ofApp::setup(){
 void ofApp::addParticles(){
     
     Particle p;
-    ofVec2f rVel = ofVec2f(ofRandom(-1.0 , 1.0), ofRandom(-1.0, 1.0));
+    ofVec2f rVel = ofVec2f(ofRandom(-2.0 , 1.0), ofRandom(-1.0, 2.0));
     p.setup(rVel);
     particles.push_back(p);
+    
     
 }
 
@@ -75,7 +78,7 @@ void ofApp::draw(){
         maskFbo.end();
         maskFbo.draw(0,0);
     
-//        gui.draw();
+        gui.draw();
 }
 
 //--------------------------------------------------------------
